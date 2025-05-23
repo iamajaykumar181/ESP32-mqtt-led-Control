@@ -14,7 +14,6 @@
   <p id="ledStatus">Waiting for status...</p>
 
   <script>
-    // Connect to MQTT broker over WebSockets (HiveMQ)
     const clientId = "webClient_" + Math.random().toString(16).substr(2, 8);
     const client = mqtt.connect("wss://broker.hivemq.com:8884/mqtt", {
       clientId: clientId,
